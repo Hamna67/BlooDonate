@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marif.bloodapp.Page.SplashScreen">
+
+    <ImageView
+        android:id="@+id/splashlogo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/applogo" />
+    <TextView
+        android:id="@+id/splashappname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/splashlogo"
+        android:textColor="@color/apptext"/>
+    <TextView
+        android:id="@+id/splashappslogan"
+        android:layout_below="@id/splashappname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_slogan"
+        android:textSize="@dimen/_18sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/apptext"
+ />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/splashcopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_copyrights"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/apptext"
+
+ />
+</RelativeLayout>

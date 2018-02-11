@@ -1,0 +1,108 @@
+<resources>
+    <string-array name="cities">
+        <item>Karachi</item>
+        <item>Lahore</item>
+        <item>Faisalabad</item>
+        <item>Islamabad</item>
+        <item>Multan</item>
+        <item>Murree</item>
+        <item>Sialkot</item>
+        <item>Sahiwal</item>
+    </string-array>
+
+    <string-array name="bloodtypes">
+        <item>A+</item>
+        <item>A-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string name="Homepage">This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+This is the home page
+</string>
+    <string name="userbio">User Bio Data</string>
+    <string name="walloffame">Wall of Fame</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="notifications">Notifications</string>
+    <string name="request">Request</string>
+    <string name="verify">Verify</string>
+    <string name="verificationtext">Enter the 4 digit code recieved through SMS</string>
+    <string name="resendcode"><u>Resend code</u></string>
+    <string name="verification">Verification</string>
+    <string name="banner_description">Title Banner</string>
+    <string name="app_name">BlooDonate</string>
+    <string name="app_slogan">Save a life. Give Blood.</string>
+    <string name="signin">Sign In</string>
+    <string name="app_copyrights">Copyrights (c)</string>
+    <string name="signup">Sign Up</string>
+    <string name="donors">Donors</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword"><u>Forgot password?</u></string>
+    <string name="aboutusbanner">About us</string>
+    <string name="aboutus"><u>About us</u></string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="city">City</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="hieght">Hieght in cms (eg 163.7)</string>
+    <string name="weight">Weight in kgs (eg 57.5)</string>
+    <string name="bloodtype">Blood Group</string>
+    <string name="dob">Date of birth dd-mm-yyyy</string>
+    <string name="done">Done</string>
+    <string name="aboutustext">As a high school dropout myself and now a mother of six, one child being a recent high school graduate, one just entering high school, and another soon to enter high school in a year with three others trailing behind, I often find myself reflecting on my high school years. Why was I so unmotivated to finish high school? What made me want to go back to school? The question it all comes down to is, what can be done to prevent high school students from losing motivation, detouring them from dropping out and not becoming just another statistic? Motivating high school students may seem like a daunting task; however, it is easier than we think by encouraging them, helping them acquire their own aspirations, and making school interesting. Students will not only meet graduation requirements, but they will feel a sense of accomplishment while doing it. The Writing Center’s Response: Notice how the writer’s thesis statement (in bold) lays out the paper’s organization. Just from that one sentence, readers know that the paper will first cover encouragement, then move on to aspirations, and finish with strategies for building interest in school. In this way, the thesis statement is not only an argument but also a road map. The writer could have chosen a more obvious way to set up the paper’s structure: In this paper, I will first discuss X, then Y, and then Z. The choice displayed here, however, is subtler and crafted with a persuasive voice.</string>
+    <string name="title_activity_listview">Listview</string>
+    <string name="title_activity_card_request">cardActivityRequest</string>
+</resources>

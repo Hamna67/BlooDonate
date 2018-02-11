@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        card_view:cardMaxElevation="1dp"
+        card_view:cardElevation="1dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/NameLayout"
+                >
+<!--
+                <TextView
+                    android:id="@+id/NameView"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/apptext"
+                    android:textSize="@dimen/_15sdp"/>
+-->
+                <TextView
+                    android:id="@+id/FirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_1sdp"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/LastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/EmailLayout"
+                android:layout_below="@+id/NameLayout">
+
+            <!--    <TextView
+                    android:id="@+id/EmailView"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Email"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/apptext"
+                    android:textSize="@dimen/_15sdp" />
+-->
+                <TextView
+                    android:id="@+id/Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/PhoneLayout"
+                android:layout_below="@+id/EmailLayout">
+
+          <!--      <TextView
+                    android:id="@+id/PhoneView"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:padding="@dimen/_5sdp"
+
+                    android:textColor="@color/apptext"
+                    android:textSize="@dimen/_15sdp"/>
+-->
+                <TextView
+                    android:id="@+id/Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/LocationLayout"
+                android:layout_below="@+id/PhoneLayout">
+
+        <!--        <TextView
+                    android:id="@+id/CityView"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:padding="@dimen/_5sdp"
+
+                    android:textColor="@color/apptext"
+                    android:textSize="@dimen/_15sdp"/>
+-->
+                <TextView
+                    android:id="@+id/City"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

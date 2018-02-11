@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marif.bloodapp.Page.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/applogo" />
+    <TextView
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_copyrights"
+        android:textColor="@color/apptext"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/apptext"
+        android:textSize="@dimen/_40sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_gravity="center"
+        android:text="@string/app_slogan"
+        android:textColor="@color/apptext"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_5sdp" />
+
+    <Button
+        android:id="@+id/signin_Button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignLeft="@+id/signup_Button"
+        android:layout_alignStart="@+id/signup_Button"
+        android:layout_below="@+id/signup_Button"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="signIn"
+        android:text="@string/signin"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/_18sdp" />
+
+    <Button
+        android:id="@+id/signup_Button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/_18sdp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:onClick="signUp"/>
+    <Button
+        android:id="@+id/about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_Button"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/aboutus"
+        android:onClick="aboutUs"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15sdp" />
+</RelativeLayout>

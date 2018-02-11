@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.marif.bloodapp.Page.RequestActivity"
+android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/banner2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/banner_description"
+            app:srcCompat="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/signuptitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/donors"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/_20sdp" />
+    </RelativeLayout>
+<!--
+    <GridView
+        android:id="@+id/requestListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="110dp"
+        android:gravity="center"
+        android:numColumns="2" />
+        -->
+       <!-- android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/background_light"
+        -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/requestRecyclerView"
+        />
+
+</LinearLayout>

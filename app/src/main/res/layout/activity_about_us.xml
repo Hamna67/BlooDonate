@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marif.bloodapp.Page.AboutUs">
+    <ImageView
+        android:id="@+id/aboutus_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        app:srcCompat="@android:color/holo_red_dark"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/aboutus_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aboutusbanner"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/aboutus_banner"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+               <TextView
+            android:id="@+id/aboutus_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutustext"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textAlignment="center"
+            />
+
+    </ScrollView>
+</RelativeLayout>

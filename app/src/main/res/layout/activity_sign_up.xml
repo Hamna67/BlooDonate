@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marif.bloodapp.Page.SignUp">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/banner_description"
+        app:srcCompat="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@android:color/background_light"
+        android:layout_centerHorizontal="true" />
+
+
+
+        >
+
+        <RelativeLayout
+           android:layout_below="@id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+            <EditText
+                android:id="@+id/First_Name"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/fname"
+                android:inputType="textCapWords"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_17sdp"
+                android:layout_marginBottom="@dimen/_20sdp" android:layout_marginStart="@dimen/_10sdp" />
+
+            <EditText
+                android:inputType="textCapWords"
+                android:id="@+id/Last_Name"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/lname"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/_17sdp"
+               android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/email_input_signup"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_below="@id/First_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_17sdp"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+
+            <EditText
+                android:id="@+id/phone_input_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/email_input_signup"
+                android:layout_alignStart="@+id/email_input_signup"
+                android:layout_below="@+id/email_input_signup"
+                android:hint="@string/phonenumber"
+                android:textSize="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/password_input_signup"
+                android:layout_below="@id/phone_input_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+            <EditText
+                android:id="@+id/confirm_password_input_signup"
+                android:layout_below="@id/password_input_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirmpassword"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_17sdp"
+                android:inputType="textPassword"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+
+
+            <Spinner
+                android:id="@+id/city_menu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@+id/confirm_password_input_signup"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:prompt="@string/city"
+                android:entries="@array/cities"
+
+              />
+
+            <Button
+                android:id="@+id/signup_signup"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@android:color/holo_red_dark"
+                android:text="@string/signup"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/_18sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:onClick="signUp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
