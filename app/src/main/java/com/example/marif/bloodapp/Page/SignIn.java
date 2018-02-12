@@ -16,7 +16,7 @@ public class SignIn extends AppCompatActivity {
 
 
     TextView textview;
-    EditText UserName;
+    EditText PhoneNumber;
     EditText Password;
 
     @Override
@@ -31,20 +31,21 @@ public class SignIn extends AppCompatActivity {
     }
 
     public void login(){
-        UserName=(EditText)findViewById(R.id.email_input_signin);
+        PhoneNumber=(EditText)findViewById(R.id.phone_input_signin);
         Password=(EditText)findViewById(R.id.password_input_signin);
-        new signinConnectivity(this,textview,UserName.getText().toString(),Password.getText().toString(), 0).execute();
+        new signinConnectivity(this,textview,PhoneNumber.getText().toString(),Password.getText().toString(), 0).execute();
 
     }
+
     public void goToHomeAfterSignin(View view) {
         login();
-        TextView T=(TextView)findViewById(R.id.textView6);
+     /*   TextView T=(TextView)findViewById(R.id.textView6);
         String txt=T.getText().toString();
         if (txt.length()<10) {
             Intent myIntent = new Intent(SignIn.this,
                     HomePage.class);
             startActivity(myIntent);// Do something in response to button
-        }
+        }*/
     }
 
     public void loggedIn(String result)
@@ -57,7 +58,7 @@ public class SignIn extends AppCompatActivity {
         {
             Log.i("loggedIn:","YES");
             Intent myIntent = new Intent(SignIn.this,
-                    HomePage.class).putExtra("EMAIL",UserName.getText().toString());
+                    HomePage.class).putExtra("PHONE",PhoneNumber.getText().toString());
             startActivity(myIntent);
         }
     }

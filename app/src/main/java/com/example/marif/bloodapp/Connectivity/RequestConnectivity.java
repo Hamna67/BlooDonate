@@ -25,17 +25,17 @@ import java.util.ArrayList;
 public class RequestConnectivity extends AsyncTask<Void, Void, String> {
 
     ArrayList<User> userList;
-    String email;
+    String phone;
     private Context context;
     private int byGetOrPost = 0;
 
     RequestActivity requestContext;
     //flag 0 means get and 1 means post.(By default it is get.)
-    public RequestConnectivity(Context context,String email, int flag) {
+    public RequestConnectivity(Context context,String phone, int flag) {
         super();
         this.context = context;
         byGetOrPost = flag;
-        this.email = email;
+        this.phone = phone;
 
         this.requestContext = (RequestActivity)context;
         this.userList = new ArrayList<User>();
@@ -52,7 +52,7 @@ public class RequestConnectivity extends AsyncTask<Void, Void, String> {
 
 
         try {
-            String link = "http://ec2-13-127-129-16.ap-south-1.compute.amazonaws.com/MatchUser.php?email="+email+"";;
+            String link = "http://ec2-13-127-129-16.ap-south-1.compute.amazonaws.com/MatchUser.php?phone="+phone+"";;
 
             URL url = new URL(link);
             HttpClient client = new DefaultHttpClient();

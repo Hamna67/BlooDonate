@@ -24,9 +24,9 @@ public class RequestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request);
 
-        String email;
-        email= getIntent().getStringExtra("EMAIL");
-        new RequestConnectivity(this,email, 0).execute();
+        String phone;
+        phone= getIntent().getStringExtra("PHONE");
+        new RequestConnectivity(this,phone, 0).execute();
 
     }
 

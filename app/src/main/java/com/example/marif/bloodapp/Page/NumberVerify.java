@@ -9,16 +9,16 @@ import com.example.marif.bloodapp.R;
 
 public class NumberVerify extends AppCompatActivity {
 
-    String email;
+    String phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number_verify);
-        email= getIntent().getStringExtra("EMAIL");
+        phone= getIntent().getStringExtra("PHONE");
     }
     public void goToUserBio(View view) {
         Intent myIntent = new Intent(NumberVerify.this,
-                UserBio.class).putExtra("EMAIL",email);
+                UserBio.class).putExtra("PHONE",phone);
         startActivity(myIntent);// Do something in response to button
     }
 }

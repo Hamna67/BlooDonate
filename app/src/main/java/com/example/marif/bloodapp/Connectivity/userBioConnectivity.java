@@ -51,11 +51,11 @@ public class userBioConnectivity extends AsyncTask<Void, Void, String> {
         double w=new_user.getWeight();
         String bg=new_user.getBloodGroup();
         String Em=new_user.getEmail();
-
+        String ph = new_user.getPhoneNum();
 
 
         try {
-            String link = "http://ec2-13-127-129-16.ap-south-1.compute.amazonaws.com/StoreBioData.php?dateOfBirth="+Dob+"&height="+h+"&weight="+w+"&bloodGroup="+bg+"&email="+Em+"";;
+            String link = "http://ec2-13-127-129-16.ap-south-1.compute.amazonaws.com/StoreBioData.php?dateOfBirth="+Dob+"&height="+h+"&weight="+w+"&bloodGroup="+bg+"&phone="+ph+"";;
 
             URL url = new URL(link);
             HttpClient client = new DefaultHttpClient();

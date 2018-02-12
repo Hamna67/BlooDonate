@@ -124,7 +124,7 @@ public class SignUp extends AppCompatActivity {
         String expected = " Successful Signup ";
         if(text.equalsIgnoreCase(expected))
         {
-            Intent myIntent = new Intent(SignUp.this, NumberVerify.class).putExtra("EMAIL",Email.getText().toString());
+            Intent myIntent = new Intent(SignUp.this, NumberVerify.class).putExtra("PHONE",PhoneNumber.getText().toString());
             startActivity(myIntent);
         }
 

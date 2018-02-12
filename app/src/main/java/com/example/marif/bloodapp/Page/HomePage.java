@@ -16,7 +16,7 @@ import com.example.marif.bloodapp.Connectivity.homepageConnectivity;
 public class HomePage extends AppCompatActivity {
 
     User logged_user;
-    String email;
+    String phone;
 
     TextView userNameText;
 
@@ -32,8 +32,8 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         userNameText = (TextView) findViewById(R.id.username);
-        email= getIntent().getStringExtra("EMAIL");
-        Toast.makeText(this, "Logged in as " + email, Toast.LENGTH_LONG).show();
+        phone= getIntent().getStringExtra("PHONE");
+        Toast.makeText(this, "Logged in as " + phone, Toast.LENGTH_LONG).show();
         fetchUserData();
 
 
@@ -44,7 +44,7 @@ public class HomePage extends AppCompatActivity {
 
     protected void fetchUserData()
     {
-        new homepageConnectivity(this,email, 0).execute();
+        new homepageConnectivity(this,phone, 0).execute();
     }
     public void populate(User u)
     {
@@ -53,7 +53,7 @@ public class HomePage extends AppCompatActivity {
 
         valueList[0] = u.getFirstName();
         valueList[1] = u.getLastName();
-        valueList[2] = email;
+        valueList[2] = u.getEmail();
         valueList[3] = u.getPhoneNum();
         valueList[4] = u.getCity();
         valueList[5] = u.getBloodGroup();
@@ -70,7 +70,7 @@ public class HomePage extends AppCompatActivity {
 
     public void request(View view)
     {
-        Intent myIntent = new Intent(HomePage.this, RequestActivity.class).putExtra("EMAIL",email);
+        Intent myIntent = new Intent(HomePage.this, RequestActivity.class).putExtra("PHONE",phone);
         startActivity(myIntent);
 
     }

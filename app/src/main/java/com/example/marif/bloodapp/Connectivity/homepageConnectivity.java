@@ -23,17 +23,17 @@ import java.net.URL;
 
 public class homepageConnectivity extends AsyncTask<Void, Void, String> {
     User new_user;
-    String email;
+    String phone;
     private Context context;
     private int byGetOrPost = 0;
 
     HomePage homePageContext;
     //flag 0 means get and 1 means post.(By default it is get.)
-    public homepageConnectivity(Context context,String email, int flag) {
+    public homepageConnectivity(Context context,String phone, int flag) {
         super();
         this.context = context;
         byGetOrPost = flag;
-        this.email=email;
+        this.phone=phone;
 
         this.homePageContext = (HomePage) context;
 
@@ -49,7 +49,7 @@ public class homepageConnectivity extends AsyncTask<Void, Void, String> {
 
 
         try {
-            String link = "http://ec2-13-127-129-16.ap-south-1.compute.amazonaws.com/RetrieveRegistration.php?email="+email+"";;
+            String link = "http://ec2-13-127-129-16.ap-south-1.compute.amazonaws.com/RetrieveRegistration.php?phone="+phone+"";;
 
             URL url = new URL(link);
             HttpClient client = new DefaultHttpClient();
@@ -81,7 +81,7 @@ public class homepageConnectivity extends AsyncTask<Void, Void, String> {
         String[] values=result.split("\\*.\\*");
         //Log.d("home retrieveing",values);
         Log.d("home retrieveing",values[0] + values[1]+values[2]+values[3]);
-        new_user = new User(values[0],values[1],email,values[2],null,values[3],values[5],values[8],Integer.parseInt(values[6]),Integer.parseInt(values[7]));
+        new_user = new User(values[0],values[1],values[5],values[2],null,values[3],values[5],values[8],Integer.parseInt(values[6]),Integer.parseInt(values[7]));
         homePageContext.populate(new_user);
         Log.d("home retrieveing",result);
 

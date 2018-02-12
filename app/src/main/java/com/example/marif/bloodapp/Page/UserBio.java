@@ -20,13 +20,13 @@ public class UserBio extends AppCompatActivity {
     private EditText Weight;
     private EditText Height;
     private EditText Dob;
-    String email;
+    String phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_bio);
         registerViews();
-        email= getIntent().getStringExtra("EMAIL");
+        phone= getIntent().getStringExtra("PHONE");
     }
 
     public void goToHomeAfterSignup(View view) {
@@ -40,7 +40,7 @@ public class UserBio extends AppCompatActivity {
         Spinner BloodType =(Spinner) findViewById(R.id.bloodtype_userbio);
         String Bloodtypetext =BloodType.getSelectedItem().toString();
 
-        User user=new User(null,null,email,null, null,null,Dobtext,Bloodtypetext,Weightnum,Heightnum);
+        User user=new User(null,null,null,phone, null,null,Dobtext,Bloodtypetext,Weightnum,Heightnum);
         new userBioConnectivity(this,user, 0).execute();
 
     }
@@ -93,7 +93,7 @@ public class UserBio extends AppCompatActivity {
         String expected = " Successful Entry ";
         if (text.equalsIgnoreCase(expected)) {
 
-            Intent myIntent = new Intent(UserBio.this, HomePage.class).putExtra("EMAIL", email);
+            Intent myIntent = new Intent(UserBio.this, HomePage.class).putExtra("PHONE", phone);
 
             startActivity(myIntent);// Do something in response to button
         }

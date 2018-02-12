@@ -96,6 +96,7 @@ This is the home page
     <string name="lname">Last Name</string>
     <string name="confirmpassword">Confirm Password</string>
     <string name="city">City</string>
+    <string name="phone">Phone</string>
     <string name="phonenumber">Phone Number</string>
     <string name="hieght">Hieght in cms (eg 163.7)</string>
     <string name="weight">Weight in kgs (eg 57.5)</string>
