@@ -21,7 +21,8 @@ public class HomePage extends AppCompatActivity {
     TextView userNameText;
 
     ListView simpleList;
-    String tagList[] = {"First Name", "Last Name", "Email","Phone", "Location", "Blood Group", "Weight", "Height","Date of Birth"};
+    String tagList[] = {"Name", "Email","Phone","Blood Group","Available for Donation","Date of Birth","Location", "Weight", "Height"};
+  //  String tagList[] = {"First Name", "Last Name", "Email","Phone", "Location", "Blood Group", "Weight", "Height","Date of Birth"};
     String valueList[] = {"","","","","","","","",""};
 
 
@@ -51,7 +52,7 @@ public class HomePage extends AppCompatActivity {
 
         userNameText.setText(u.getFirstName() + " " + u.getLastName());
 
-        valueList[0] = u.getFirstName();
+       /* valueList[0] = u.getFirstName();
         valueList[1] = u.getLastName();
         valueList[2] = u.getEmail();
         valueList[3] = u.getPhoneNum();
@@ -60,6 +61,16 @@ public class HomePage extends AppCompatActivity {
         valueList[6] = Double.toString(u.getWeight());
         valueList[7] = Double.toString(u.getHeight());
         valueList[8] = u.getDateOfBirth();
+*/
+        valueList[0] = u.getFirstName() + " " + u.getLastName();
+        valueList[1] = u.getEmail();
+        valueList[2] = u.getPhoneNum();
+        valueList[3] = u.getBloodGroup();
+        valueList[4]=  "NO"; //later read from database
+        valueList[5] = u.getDateOfBirth();
+        valueList[6] = u.getCity();
+        valueList[7] = Double.toString(u.getWeight());
+        valueList[8] = Double.toString(u.getHeight());
 
         simpleList = (ListView) findViewById(R.id.profileList);
         CustomHomeAdapter customAdapter = new CustomHomeAdapter(getApplicationContext(), tagList, valueList);
@@ -68,6 +79,16 @@ public class HomePage extends AppCompatActivity {
 
     }
 
+    public void changepassword(View view)
+    {
+        Intent myIntent = new Intent(HomePage.this, ChangePassword.class).putExtra("PHONE",phone);
+        startActivity(myIntent);
+    }
+    public void editdataprofile(View view)
+    {
+        Intent myIntent = new Intent(HomePage.this, EditProfile.class).putExtra("PHONE",phone);
+        startActivity(myIntent);
+    }
     public void request(View view)
     {
         Intent myIntent = new Intent(HomePage.this, RequestActivity.class).putExtra("PHONE",phone);

@@ -36,6 +36,8 @@
             android:name=".Listviews.cardActivityRequest"
             android:label="@string/title_activity_card_request"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Page.ChangePassword" />
+        <activity android:name=".Page.EditProfile"></activity>
     </application>
 
 </manifest>

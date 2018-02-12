@@ -103,6 +103,10 @@ This is the home page
     <string name="bloodtype">Blood Group</string>
     <string name="dob">Date of birth dd-mm-yyyy</string>
     <string name="done">Done</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="changepassword">Change Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_profile">Edit Profile</string>
     <string name="aboutustext">As a high school dropout myself and now a mother of six, one child being a recent high school graduate, one just entering high school, and another soon to enter high school in a year with three others trailing behind, I often find myself reflecting on my high school years. Why was I so unmotivated to finish high school? What made me want to go back to school? The question it all comes down to is, what can be done to prevent high school students from losing motivation, detouring them from dropping out and not becoming just another statistic? Motivating high school students may seem like a daunting task; however, it is easier than we think by encouraging them, helping them acquire their own aspirations, and making school interesting. Students will not only meet graduation requirements, but they will feel a sense of accomplishment while doing it. The Writing Center’s Response: Notice how the writer’s thesis statement (in bold) lays out the paper’s organization. Just from that one sentence, readers know that the paper will first cover encouragement, then move on to aspirations, and finish with strategies for building interest in school. In this way, the thesis statement is not only an argument but also a road map. The writer could have chosen a more obvious way to set up the paper’s structure: In this paper, I will first discuss X, then Y, and then Z. The choice displayed here, however, is subtler and crafted with a persuasive voice.</string>
     <string name="title_activity_listview">Listview</string>
     <string name="title_activity_card_request">cardActivityRequest</string>

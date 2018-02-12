@@ -36,19 +36,7 @@
         android:textColor="@android:color/background_light"
         android:textSize="@dimen/_20sdp" />
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/home_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/home_footer"
-        android:layout_below="@id/home_banner"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:fillViewport="true">
 
-
-    </ScrollView>
 
 
     <LinearLayout
@@ -69,18 +57,17 @@
 
             <ImageButton
                 android:id="@+id/wall_of_fame"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/star" />
 
             <TextView
                 android:id="@+id/wall_of_fametext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/wall_of_fame"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/walloffame"
                 android:textAlignment="center"
@@ -98,11 +85,11 @@
 
             <ImageButton
                 android:id="@+id/history"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/history" />
 
 
@@ -126,12 +113,11 @@
 
             <ImageButton
                 android:id="@+id/home"
-                android:layout_alignTop="@+id/home_footer"
-                android:layout_toLeftOf="@+id/Number"
-                android:layout_toStartOf="@+id/Number"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/home" />
 
 
@@ -155,11 +141,11 @@
 
             <ImageButton
                 android:id="@+id/notification_background"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/notification" />
 
             <TextView
@@ -184,12 +170,13 @@
 
             <ImageButton
                 android:id="@+id/request"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/request"
                 android:onClick="request"
-
                 />
 
             <TextView
@@ -207,17 +194,56 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/changepassword"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editprofiledata"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent"
+        android:labelFor="@+id/Phone"
+        android:onClick="changepassword"
+        android:text="@string/changepassword"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15sdp" />
+    <Button
+        android:id="@+id/editprofiledata"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/home_footer"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="editdataprofile"
+        android:text="@string/editprofile"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15sdp" />
+
+    <ImageView
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_toRightOf="@+id/editprofiledata"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_above="@id/home_footer"
+        android:src="@android:drawable/ic_menu_edit"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
     <ListView
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
         android:id="@+id/profileList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/home_footer"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_above="@+id/changepassword"
         android:layout_below="@+id/home_banner"
         android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"
-        android:listSelector="@android:color/background_light" />
+        android:dividerHeight="0dp"
+        />
+
 
 
 </RelativeLayout>

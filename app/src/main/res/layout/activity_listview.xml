@@ -10,9 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="@dimen/_10sdp"
-        android:textAlignment="center"
         android:textColor="@color/apptext"
+        android:textStyle="bold"
+        android:padding="@dimen/_9sdp"
         android:textSize="@dimen/_15sdp" />
     <!--
          android:textColor="?attr/colorPrimary" -->
@@ -22,10 +22,9 @@
         android:id="@+id/valueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|end"
+        android:layout_gravity="center"
         android:layout_weight="0.8"
-        android:padding="@dimen/_10sdp"
-        android:textAlignment="textEnd"
+        android:padding="@dimen/_9sdp"
         android:textColor="@android:color/darker_gray"
         android:textSize="@dimen/_15sdp" />
     <!--

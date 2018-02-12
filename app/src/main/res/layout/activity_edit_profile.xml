@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marif.bloodapp.Page.EditProfile">
+
+    <ImageView
+        android:id="@+id/editprofilebanner"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/banner_description"
+        app:srcCompat="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/editprofiletitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/edit_profile"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/_20sdp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrolleditprofile"
+        android:layout_below="@id/editprofilebanner"
+        android:layout_above="@id/edit_done"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+
+        android:layout_marginStart="@dimen/_20sdp">
+        <LinearLayout
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginEnd="@dimen/_20sdp">
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/edit_done"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/_18sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
