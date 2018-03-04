@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.marif.bloodapp.Connectivity.codeSendConnectivity;
 import com.example.marif.bloodapp.FormValidators.FormValidation;
 import com.example.marif.bloodapp.R;
 import com.example.marif.bloodapp.Entity.User;
@@ -124,10 +125,18 @@ public class SignUp extends AppCompatActivity {
         String expected = " Successful Signup ";
         if(text.equalsIgnoreCase(expected))
         {
+            //sending code to this number
+            new codeSendConnectivity(this,PhoneNumber.getText().toString()).execute();
             Intent myIntent = new Intent(SignUp.this, NumberVerify.class).putExtra("PHONE",PhoneNumber.getText().toString());
             startActivity(myIntent);
         }
 
+    }
+
+    //function for displaying if code has been sent
+    public void codeSent(String result)
+    {
+        Toast.makeText(this, result, Toast.LENGTH_LONG).show();
     }
 
 

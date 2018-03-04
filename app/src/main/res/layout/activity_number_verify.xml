@@ -80,7 +80,7 @@
             android:textAllCaps="false"
             android:textColor="@android:color/background_light"
             android:textSize="@dimen/_18sdp"
-            android:onClick="goToUserBio"
+            android:onClick="verify"
             tools:ignore="OnClick" />
 
         <Button

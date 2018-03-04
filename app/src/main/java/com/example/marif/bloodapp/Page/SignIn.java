@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.marif.bloodapp.Connectivity.codeSendConnectivity;
 import com.example.marif.bloodapp.R;
 import com.example.marif.bloodapp.Connectivity.signinConnectivity;
 
@@ -25,7 +26,7 @@ public class SignIn extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
 
         textview = (TextView) findViewById(R.id.textView6);
-
+       // new codeSendConnectivity(this,"03203171108");
 
 
     }
@@ -33,6 +34,7 @@ public class SignIn extends AppCompatActivity {
     public void login(){
         PhoneNumber=(EditText)findViewById(R.id.phone_input_signin);
         Password=(EditText)findViewById(R.id.password_input_signin);
+
         new signinConnectivity(this,textview,PhoneNumber.getText().toString(),Password.getText().toString(), 0).execute();
 
     }
